@@ -116,7 +116,7 @@ app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/",userRouter);
 
 app.get("/", (req, res) => {
-  res.render('homepage'); // Render the 'homepage.ejs' file
+  res.render('show'); // Render the 'homepage.ejs' file
 });
 
 app.all("*",(req,res,next)=>{
